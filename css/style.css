@@ -1,0 +1,179 @@
+
+#container {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/img-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+/* page header styling */
+#page-header {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.page-logo {
+    width: 25%;
+    
+}
+
+.page-logo h2 {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.page-logo h2 a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+
+/* nav styling */
+
+
+nav {
+    width: 75%;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+}
+
+nav .top-nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0 7px 0 8px;
+    font-size: 18px;
+}
+
+nav .top-nav .left-nav, nav .top-nav .right-nav {
+    padding: 20px 10px;
+}
+
+
+.breadcrum {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .breadcrum a {
+    text-decoration: none;
+    color: white;
+    margin: 0 7px 0 8px;
+    font-size: 18px;
+}
+
+nav .breadcrum .left-breadcrum, nav .breadcrum button {
+    padding: 10px;
+    margin: 10px 15px;
+}
+
+nav a:hover{
+    color: lightgrey;
+}
+
+
+.right-nav {
+    margin-right: 35px;
+}
+
+.property-button {
+    margin-right: 35px;
+    font-size: 18px;
+}
+
+.property-button button {
+    background-color: blue;
+    font-size: 18px;
+    color: white;
+}
+
+/* Login main section styling */
+
+main .register {
+    background-color: black;
+    width: 70%;
+    margin: auto;
+    opacity: 0.8;
+    border: 1px solid white;
+    z-index: -1;
+    position: absolute;
+}
+
+main .register .registration-content{
+    width: 40%;
+    padding: 100px 10px 100px 50px;
+    color: white;
+}
+
+#register-form-button{
+    background-color: black;
+    opacity: 0.8;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 40px;
+    color: white;
+}
+
+/* .LOGIN FORM STYLING */
+
+.login-form {
+    width: 30%;
+    background-color: white;
+    margin: auto;
+}
+
+
+form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login-form-heading {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+form input {
+    width: 60%;
+    padding: 7px 0 7px 0;
+    background-color: silver;
+    margin-left: 0;
+    border: none;
+}
+
+form select {
+    width: 30%;
+    padding: 5px 0 5px 0;
+    background-color: darkgray;
+}
+
+#login-form-heading {
+    margin-top: 40px;
+}
+
+#password {
+    width: 90%;
+}
+
+#forget-password-link {
+    color: darkgreen;
+    text-align: right;
+}
+
+#login-button {
+    background-color: gray;
+    border-radius: 10px;
+    padding: 5px 40px;
+    color: white;
+    margin-bottom: 30px;
+}
