@@ -1,10 +1,17 @@
 
-#container {
+
+body {
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/img-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
 }
+
+/* #container { */
+    /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/img-5.jpg); */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+} */
 /* page header styling */
 #page-header {
     display: flex;
@@ -98,14 +105,16 @@ nav a:hover{
 
 /* Login main section styling */
 
+main {
+    position: relative;
+}
+
 main .register {
     background-color: black;
     width: 70%;
     margin: auto;
     opacity: 0.8;
     border: 1px solid white;
-    z-index: -1;
-    position: absolute;
 }
 
 main .register .registration-content{
@@ -128,7 +137,10 @@ main .register .registration-content{
 .login-form {
     width: 30%;
     background-color: white;
-    margin: auto;
+    /* margin: auto; */
+    position: absolute;
+    top: -30px;
+    left: 700px;
 }
 
 
@@ -177,3 +189,16 @@ form select {
     color: white;
     margin-bottom: 30px;
 }
+
+/* mobile devices responsive layout */
+/* 
+@media screen and only (max-width: 375px) {
+    main {
+        position: static;
+    }
+
+    .login-form {
+        display: block;
+        position: static;
+    }
+} */
