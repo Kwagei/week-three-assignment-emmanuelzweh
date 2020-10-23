@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="container">
+    <div class="container">
         <header id="page-header">
             <div class="page-logo">
-                <h2><a href="index.html" id="logo-link">SILKROAD</a></h2>
+                <div class="brand"><a href="index.html" class="logo-link">SILKROAD</a></div>
             </div>
             <nav>
                 <div class="top-nav">
                     <div class="left-nav">
                         <a href="index.html">Home</a>
-                        <a href="#property.html">Our properties</a>
+                        <a href="property.html">Our properties</a>
                     </div>
                     <div class="right-nav">
-                        <a href="#">Login</a> |
-                        <a href="#">Register</a>
+                        <a href="#">Login</a> <span style="color: white;">|</span>
+                        <a href="register.html">Register</a>
                     </div>
                 
                 </div>
@@ -35,33 +35,38 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <div class="register">
-                <div class="registration-content">
-                    <h3>Don't have an account?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Vel, modi ducimus? Amet, laborum quaerat doloremque deleniti
-                    </p><br>
-                    <button id="register-form-button">Register</button>
-                </div>
+        <main id="login-page-main">
+            <div class="main-content-div">
+                <div class="content">
+                    <div class="registration-content">
+                        <h3>Don't have an account?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vel, modi ducimus? Amet, laborum quaerat 
+                        </p>
+                        <button class="registration-button"><a href="register.html" class="link-button">Register</a></button>
+                    </div>
 
-            </div>
-            <div class="login-form">
-                <form action="#" method="post">
-                    <h1 id="login-form-heading">LOGIN</h1>
-                    <select name="code" id="code">
-                        <option value="231">+231</option>
-                        <option value="231">+231</option>
-                        <option value="231">+231</option>
-                        <input type="text" placeholder="Phone number">
-                    </select>
-                    <br><br>
-                    <input type="password" name="password" id="password">
-                    <br>
-                    <p><a href="#" id="forget-password-link">Forget password?</a></p><br><br>
-                    <button id="login-button">LOGIN</button>
-                </form>
-            </div>
+                </div>
+                <div class="form-div">
+                    <form action="#" method="post">
+                        <h1 id="form-heading">LOGIN</h1>
+                        <select name="code" id="code">
+                            <option value="231">+231</option>
+                            <option value="231">+231</option>
+                            <option value="231">+231</option>
+                            <input type="text" placeholder="Phone number">
+                        </select>
+                        <br><br>
+                        <input type="password" name="password" id="password">
+                        
+                        <!-- This div below is for all the link within the form in the form-div -->
+                        <div class="form-links">
+                            <p><a href="#" id="forget-password-link">Forget password?</a></p><br><br>
+                            <button class="login-button"><a href="index.html"class="login-link-button">Login</a></button>
+                        </div>
+                    </form>
+                </div>
+        </div>
         </main>
 </div>
 </body>
