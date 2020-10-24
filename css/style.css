@@ -218,11 +218,10 @@ form select {
     display: grid;
     grid-template-columns: 50% 50%;
     box-sizing: border-box;
-    background-color: gray;
+    background-color: silver;
 }
 
 .property-nav {
-    background-color: gray;
     padding: 15px 25px;
 }
 
@@ -232,10 +231,21 @@ form select {
     margin-right: 15px;
 }
 
-/* .specific-header-details {
-    display: grid;
-    grid-template-columns: 20% 28%;
-} */
+.property-nav a:hover {
+    color: green;
+}
+
+.specific-header-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.header-select {
+    padding: 0 7px;
+    margin-left: -5px;
+    background-color: gray;
+}
 
 #property-page-main {
     width: 90%;
@@ -245,7 +255,6 @@ form select {
     height: 500px;
     margin-left: auto;
     margin-right: auto;
-    /* background-color: green; */
     margin-top: 20px;
     
 }
@@ -266,7 +275,7 @@ form select {
 }
 
 .property-main-content .main-content-items {
-    height: 300px;
+    height: 330px;
 }
 
 
@@ -384,7 +393,18 @@ form select {
 footer {
     background-color: black;
     color: white;
-    margin-top: 500px;
+}
+
+.property-page-footer {
+    margin-top: 700px;
+}
+
+.property-list-footer {
+    margin-top: 650px;
+}
+
+.category-footer {
+    margin-top: 600px;
 }
 
 .footer-details-content {
@@ -465,4 +485,89 @@ footer {
 
 ul {
     list-style-type: none;
+}
+
+/* property list page styling */
+
+.property-main-grid-container {
+    margin-bottom: 200px;
+}
+
+.property-content-list {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-bottom: 20px;
+}
+
+.list-bg-img {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../img/img-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 127px;
+}
+
+.list-items {
+    /* margin-top: -10px; */
+    padding-left: 40px;
+    border: 1px solid gray;
+    padding-top: 10px;
+}
+
+.address {
+    margin-top: -20px;
+}
+
+.list-item-author {
+    margin-top: -3px;
+}
+
+.list-price {
+    float: right;
+    padding: 5px 10px;
+    color: white;
+    background-color: green;
+    margin-right: 50px;
+    margin-top: 30px;
+} 
+
+/* All table styling */
+
+.property-item-table {
+    width: 100%;
+}
+
+table {
+    width: 90%;
+    margin-top: -10px;
+    margin-left: -5px;
+}
+
+table td {
+    text-align: center;
+    padding: 5px 10px;
+    
+}
+
+table, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+/* The load more button styling */
+
+.load-more-button-div {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.load-more-button {
+    padding: 10px 40px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+
 }
