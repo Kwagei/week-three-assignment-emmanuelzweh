@@ -6,35 +6,38 @@
     <title>Week 3 | responsive web project</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body style="background-color: whitesmoke;">
     <div class="houses-main-container">
-        <header id="page-header">
-            <div class="page-logo">
-                <div class="brand"><a href="index.html" class="logo-link">SILKROAD</a></div>
-            </div>
-            <nav>
-                <div class="top-nav">
-                    <div class="left-nav">
-                        <a href="index.html">Home</a>
-                        <a href="property.html">Our properties</a>
-                    </div>
-                    <div class="right-nav">
-                        <a href="#">Login</a> <span style="color: white;">|</span>
-                        <a href="register.html">Register</a>
-                    </div>
-                
+        <div class="page-header-wrapper">
+            <header id="page-header">
+                <div class="page-logo">
+                    <div class="brand"><a href="index.html" class="logo-link">SILKROAD</a></div>
                 </div>
-                <div class="breadcrum">
-                    <div class="left-breadcrum">
-                        <a href="index.html">HOME</a>
-                        <a href="">Login</a>
+                <nav>
+                    <div class="top-nav">
+                        <div class="left-nav">
+                            <a href="index.html">Home</a>
+                            <a href="property.html">Our properties</a>
+                        </div>
+                        <div class="right-nav">
+                            <a href="#">Login</a> <span style="color: white;">|</span>
+                            <a href="register.html">Register</a>
+                        </div>
+                    
                     </div>
-                    <div class="property-button">
-                        <button>Post a property</button>
+                    <div class="breadcrum">
+                        <div class="left-breadcrum">
+                            <a href="index.html">Home</a> <span style="color: white; font-size: 12px;">></span>
+                            <a href="property.html">Houses</a><span style="color: white; font-size: 12px;">></span>
+                            <a href="category.html">Category</a>
+                        </div>
+                        <div class="property-button">
+                            <button class="post-property">Post a property</button>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </header>
+                </nav>
+            </header>
+        </div>
         <main id="property-page-main">
             <aside id="main-sidebar">
                 <div class="main-sidebar-form">
@@ -302,9 +305,10 @@
                             </div>
                             
                         </div>
-                        <div class="load-more-button-div">
-                            <button class="load-more-button">Load more</button>
-                        </div>
+
+                        <!-- This is the load more button -->
+                        
+                        <button class="load-more-button1">Load more</button>
                        
                     </div>
                     

@@ -6,35 +6,38 @@
     <title>Week 3 | responsive web project</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body style="background-color: whitesmoke;">
     <div class="houses-main-container">
-        <header id="page-header">
-            <div class="page-logo">
-                <div class="brand"><a href="index.html" class="logo-link">SILKROAD</a></div>
-            </div>
-            <nav>
-                <div class="top-nav">
-                    <div class="left-nav">
-                        <a href="index.html">Home</a>
-                        <a href="property.html">Our properties</a>
-                    </div>
-                    <div class="right-nav">
-                        <a href="#">Login</a> <span style="color: white;">|</span>
-                        <a href="register.html">Register</a>
-                    </div>
-                
+        <div class="page-header-wrapper">
+            <header id="page-header">
+                <div class="page-logo">
+                    <div class="brand"><a href="index.html" class="logo-link">SILKROAD</a></div>
                 </div>
-                <div class="breadcrum">
-                    <div class="left-breadcrum">
-                        <a href="index.html">HOME</a>
-                        <a href="">Login</a>
+                <nav>
+                    <div class="top-nav">
+                        <div class="left-nav">
+                            <a href="index.html">Home</a>
+                            <a href="property.html">Our properties</a>
+                        </div>
+                        <div class="right-nav">
+                            <a href="#">Login</a> <span style="color: white;">|</span>
+                            <a href="register.html">Register</a>
+                        </div>
+                    
                     </div>
-                    <div class="property-button">
-                        <button>Post a property</button>
+                    <div class="breadcrum">
+                        <div class="left-breadcrum">
+                            <a href="index.html">HOME</a> <span style="color: white; font-size: 12px;">></span>
+                            <a href="property.html">Houses</a><span style="color: white; font-size: 12px;">></span>
+                            <a href="category.html">Category</a>
+                        </div>
+                        <div class="property-button">
+                            <button class="post-property">Post a property</button>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </header>
+                </nav>
+            </header>
+        </div>
         <main id="property-page-main">
             <aside id="main-sidebar">
                 <div class="main-sidebar-form">
@@ -85,20 +88,20 @@
             </aside>
             <div class="property-main-content-container">
                 <div class="property-main-grid-container">
-                    <div class="property-content">
+                    <div class="property-content" style="margin-top: -20px;">
                         <img src="./img/img-5.jpg" alt="" width="100%" height="400px">
                         <div class="category-content-container">
                             <div class="category-house-detail">
                                 <h4>3 Bedrooms Townhouse</h4>
                                 <address>24th Street Sinkor Monrovia</address><br><br>
                                 <button class="contact-button">Give us a call</button>
-                                <button class="contact-button">Give us a call</button>
+                                <button class="contact-button">Give us a e-mail</button>
                             </div>
                             <p class="price1">$500.00/month</p>
                 
                         </div>
                         <div class="property-description">
-                            <h6>PROPERTY DESCRIPTION</h6>
+                            <h4>PROPERTY DESCRIPTION</h4>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                  Sint cupiditate quis asperiores delectus dolorem ut vel 
                                  aliquid voluptatem voluptatum, odio aspernatur nihil quod 
@@ -109,7 +112,7 @@
                                  </p>
                         </div>
                         <div class="amunities-main-div">
-                            <h6 style="margin-left: 20px;">AVAILABLE AMUNITIES</h6>
+                            <h4 style="margin-left: 10px;">AVAILABLE AMUNITIES</h4>
 
                             <div class="amunities-grid-div">
                                 <div class="amunities-items">
@@ -150,7 +153,7 @@
                         </div>
                     </div>
                     
-                    <aside class="property-content-sidebar">
+                    <aside class="property-content-sidebar" style="margin-top: -20px;">
                         <h5 class="advertisement">Advertisement</h5>
                     </aside>
                 </div>
