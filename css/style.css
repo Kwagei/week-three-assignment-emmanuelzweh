@@ -6,7 +6,7 @@ body {
 
 .container { 
     width: inherit;
-    height: 753px;
+    height: 700px;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/img-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
