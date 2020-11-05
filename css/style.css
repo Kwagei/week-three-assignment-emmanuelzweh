@@ -6,7 +6,7 @@ body {
 
 .container { 
     width: inherit;
-    height: 650px;
+    height: 750px;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/bg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,7 +26,6 @@ body {
     background-color: black;
     margin-left: auto;
     margin-right: auto;
-    z-index: 0;
 
 }
 
@@ -44,7 +43,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
-    z-index: 10;
 
 }
 
@@ -644,4 +642,256 @@ table, td {
     position: relative;
     left: 250px;
     width: 80%;
+}
+
+    /* Ipad view styling  */
+@media screen and (max-width: 1200px) {
+    .container {
+        height: 100vh;
+    }
+
+    .property-button {
+        font-size: 14px;
+    }
+
+
+.page-logo .brand .logo-link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+   
+}
+    
+    .property-button .post-property {
+        background-color: blue;
+        padding: 3px 20px;
+        font-size: 16px;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .main-content-div {
+        display: grid;
+        grid-template-columns: 50% 40%;
+        background-color: black;
+        width: 90%;
+        margin: auto;
+        column-gap: 5%;
+        opacity: 0.8;
+        height: 330px;
+        margin-top: 100px;
+    }
+
+    /* form ipad styling */
+
+    .form-links {
+        margin: 20px 0 0 90px;
+    }
+
+    /* property styling */
+
+    /* #property-page-main {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 32% 73%;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        
+    } */
+
+    .property-main-grid-container {
+        display: block;
+    }
+
+    .specific-header-details, .property-content-sidebar {
+        display: none;
+    }
+    
+}
+
+
+/* Mobile device layout */
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+    }
+
+    .container {
+        height: 100vh;
+    }
+
+    #page-header {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page-logo {
+        width: 100%;
+        
+    }
+
+    .page-logo .brand {
+        text-align: center;
+        width: 60%;
+        background-color: black;
+        padding-top: 20px;
+        height: 50px;
+        margin-left: 5px;
+        margin-top: 25px;
+    
+    }
+    
+
+    .top-nav {
+        display: none;
+    }
+
+    .breadcrum {
+        display: grid;
+        grid-template-columns: 90% 10%;
+    }
+    
+    nav .breadcrum a {
+        text-decoration: none;
+        color: white;
+        margin: 0 7px 0 8px;
+        font-size: 16px;
+    }
+
+
+.property-button {
+    font-size: 16px;
+}
+
+.property-button .post-property {
+    background-color: blue;
+    padding: 3px 30px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+    /*lOGIN main content area mobile styles */
+
+    .main-content-div {
+        display: block;
+        width: 90%;
+        margin: auto;
+        opacity: 0.8;
+        height: 330px;
+        margin-top: 100px;
+    }
+
+    .content {
+        display: none;
+    }
+
+    form {
+        margin-bottom: 30px;
+    }
+
+    .form-links {
+        width: 80%;
+        margin: auto;
+    }
+    
+
+    .form-links .login-button {
+        width: 100%;
+    }
+
+    /* REIGISTER main-content-div styling */
+
+    #main-sidebar {
+        display: none;
+    }
+
+    .main-content-div {
+        background-color: transparent;
+        display: block;
+
+    }
+
+    #register-form-div {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* property grid mobile styling */
+
+    #property-page-main {
+        display: block;
+    }
+
+    .property-header {
+        display: block;
+    }
+
+    .specific-header-details{
+        display: none;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .property-main-grid-container {
+        display: block;
+    }
+
+    .property-main-content {
+        display: block;
+    }
+
+    .load-more-button1 {
+        display: none;
+    }
+
+    .property-content-sidebar {
+        display: none;
+    }
+
+    .footer-details-content {
+        display: block;
+        padding-bottom: 30px;
+        padding-left: 150px;
+    }
+
+    footer {
+        display: block;
+        width: 100%;
+    }
+    /* property page footer margin set */
+    
+    .property-page-footer {
+        margin-top: 3100px;
+    }
+
+    .footer-details-content {
+        display: block;
+        padding-bottom: 30px;
+        background-color: gray;
+        margin: auto;
+        padding-bottom: 30px;
+        padding-left: 50px;
+        /* padding-left: 150px; */
+    }
+
+    .link {
+        display: block;
+    }
 }

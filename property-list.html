@@ -17,7 +17,7 @@
                     <div class="top-nav">
                         <div class="left-nav">
                             <a href="index.html">Home</a>
-                            <a href="property.html">Our properties</a>
+                            <a href="property.html" style="color: green; font-weight: bold;">Our properties</a>
                         </div>
                         <div class="right-nav">
                             <a href="#">Login</a> <span style="color: white;">|</span>
@@ -27,8 +27,9 @@
                     </div>
                     <div class="breadcrum">
                         <div class="left-breadcrum">
-                            <a href="index.html">HOME</a> <span style="color: white; font-size: 12px;">></span>
-                            <a href="">Houses</a>
+                            <a href="index.html">Home</a> <span style="color: white; font-size: 12px;">></span>
+                            <a href="property-list.html">Houses</a><span style="color: white; font-size: 12px;">></span>
+                            <a href="category.html">Category</a>
                         </div>
                         <div class="property-button">
                             <button class="post-property">Post a property</button>
@@ -79,7 +80,8 @@
                         <option value="">1</option>
                     </select>
                     
-                    <p class="price-range">Price: $00.00  $10,000.00</p><br>
+                    <p class="price-range">Price: $00.00  $10,000.00</p>
+                    <input type="range" class="range" min="0" max="10,000"><br>
                     <button id="main-sidebar-button">Done</button>
                 </div>
 
@@ -97,8 +99,8 @@
                             View
                         </div>
                         <div class="sort">
-                            Sort By <input type="text">
-                            <select name="" id="">
+                            Sort By <input type="text" placeholder="most recent" class="sort-input">
+                            <select name="" class="header-select">
                                 <option value=""></option>
                             </select>
                         </div>
