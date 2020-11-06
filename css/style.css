@@ -18,6 +18,7 @@ body {
     width: 100%;
     background-color: black;
     opacity: 0.5;
+    
 }
 #page-header {
     display: flex;
@@ -31,6 +32,7 @@ body {
 
 .page-logo {
     width: 25%;
+    
     
 }
 
@@ -73,7 +75,7 @@ nav {
 nav .top-nav a{
     text-decoration: none;
     color: white;
-    margin: 0 7px 0 8px;
+    margin: 0 7px 0 0;
     font-size: 20px;
 }
 
@@ -85,18 +87,20 @@ nav .top-nav .left-nav, nav .top-nav .right-nav {
 .breadcrum {
     display: flex;
     justify-content: space-between;
+    margin-left: -8px;
+    margin-top: 1em;
 }
 
 nav .breadcrum a {
     text-decoration: none;
     color: white;
-    margin: 0 7px 0 8px;
+    margin: 0 7px 0 0px;
     font-size: 20px;
 }
 
 nav .breadcrum .left-breadcrum, nav .breadcrum button {
     padding: 10px;
-    margin-top: 15px;
+    margin-top: 15
 }
 
 nav a:hover{
@@ -119,6 +123,7 @@ nav a:hover{
     color: white;
     border: none;
     border-radius: 10px;
+    margin-bottom: 1.5em;
 }
 
 /* Login main section styling */
@@ -187,6 +192,7 @@ form select {
     color: white;
     border: 2px solid white;
     background-color: transparent;
+    font-size: 18px;
 }
 
 .registration-button .link-button {
@@ -197,6 +203,7 @@ form select {
 
 .form-div input::placeholder {
     padding-left: 20px;
+    font-size: 16px;
 }
 
 .form-links {
@@ -227,6 +234,18 @@ form select {
 
 .login-with {
     margin-left: 35px;
+}
+
+.create-account {
+    display: none;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.register-mobile {
+    color: rgb(97, 141, 32);
+    text-decoration: none;
 }
 
   
@@ -318,7 +337,7 @@ form select {
 }
 
 .bg-img {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/img-5.jpg);
+    /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/img-5.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
@@ -442,7 +461,8 @@ form select {
 /* footer styling */
 
 footer {
-    background-color: darkgray;
+    background-color: black;
+    opacity: 0.5;
     color: white;
     font-size: 18px;
 }
@@ -469,7 +489,11 @@ footer {
 
 .link {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
+}
+
+.left li {
+    margin-left: -40px;
 }
 
 .link ul {
@@ -626,7 +650,7 @@ table, td {
     background-color: gray;
     border: none;
     border-radius: 10px;
-    margin-left: 260px;
+    margin-left: 20%;
     font-size: 16px;
 
 }
@@ -642,6 +666,16 @@ table, td {
     position: relative;
     left: 250px;
     width: 80%;
+}
+
+.load-more-button2 {
+    padding: 5px 55px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    margin-left: 35%;
+    font-size: 16px;
 }
 
     /* Ipad view styling  */
@@ -694,17 +728,6 @@ table, td {
 
     /* property styling */
 
-    /* #property-page-main {
-        width: 90%;
-        display: grid;
-        grid-template-columns: 32% 73%;
-        height: 500px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        
-    } */
-
     .property-main-grid-container {
         display: block;
     }
@@ -726,7 +749,7 @@ table, td {
     }
 
     .container {
-        height: 100vh;
+        height: 120vh;
     }
 
     #page-header {
@@ -768,7 +791,7 @@ table, td {
         text-decoration: none;
         color: white;
         margin: 0 7px 0 8px;
-        font-size: 16px;
+        font-size: 20px;
     }
 
 
@@ -807,12 +830,27 @@ table, td {
 
     .form-links {
         width: 80%;
-        margin: auto;
+        /* margin: auto; */
     }
     
+    #forget-password-link {
+        color: rgb(97, 141, 32);
+        text-decoration: none;
+        margin-bottom: -30px;
+        font-weight: bold;
+        margin-left: 80px;
+        font-size: 18px;
+        margin-left: 20%;
+    }
 
-    .form-links .login-button {
-        width: 100%;
+    .login-button {
+        width: 103%;
+        margin-left: -55px;
+    }
+
+    .create-account {
+        display: block;
+        font-size: 18px;
     }
 
     /* REIGISTER main-content-div styling */
@@ -861,7 +899,7 @@ table, td {
         display: none;
     }
 
-    .property-content-sidebar {
+    #main-sidebar, .property-content-sidebar {
         display: none;
     }
 
@@ -878,7 +916,7 @@ table, td {
     /* property page footer margin set */
     
     .property-page-footer {
-        margin-top: 3100px;
+        margin-top: 2800px;
     }
 
     .footer-details-content {
@@ -886,8 +924,7 @@ table, td {
         padding-bottom: 30px;
         background-color: gray;
         margin: auto;
-        padding-bottom: 30px;
-        padding-left: 50px;
+        
         /* padding-left: 150px; */
     }
 
