@@ -127,6 +127,16 @@ nav a:hover{
     margin-bottom: 1.5em;
 }
 
+#postLink {
+    text-decoration: none;
+}
+
+#postLink:hover {
+    color: white;
+}
+
+
+
 /* Login main section styling */
 
 .main-content-div {
@@ -338,7 +348,6 @@ form select {
 }
 
 .bg-img {
-    /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/img-5.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
@@ -382,7 +391,7 @@ form select {
 }
 
 .main-sidebar-form {
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     background-color: silver;
@@ -397,7 +406,7 @@ form select {
 }
 
 .main-sidebar-form #search {
-    width: 80%;
+    width: 60%;
     margin-left: 30px;
     background-color: rgb(24, 24, 32);
     border: none;
@@ -412,7 +421,7 @@ form select {
 }
 
 .main-sidebar-form .sidebar-input {
-    width: 60%;
+    width: 40%;
     margin-left: 30px;
     padding: 5px 0 5px 0;
     margin-top: 10px;
@@ -435,14 +444,14 @@ form select {
 
 .range {
     margin-left: 30px;
-    width: 80%;
+    width: 60%;
     height: 3px;
     margin-top: 0;
     margin-bottom: 15px;
 }
 
 #main-sidebar-button {
-    width: 80%;
+    width: 60%;
     margin-left: 30px;
     background-color: rgb(24, 24, 32);
     text-align: center;
@@ -450,6 +459,10 @@ form select {
     padding: 5px 0 5px 0;
     border-radius: 10px;
     border: none;
+}
+
+.load-more-button1 {
+    margin-left: -45%;
 }
 
 .property-main-content-container {
@@ -483,9 +496,8 @@ footer {
 .footer-details-content {
     display: grid;
     grid-template-columns: 32% 32% 32%;
-    margin-left: 4%;
     padding-bottom: 30px;
-    padding-left: 150px;
+    padding-left: 15%;
 }
 
 .link {
@@ -513,13 +525,13 @@ footer {
 
 .bottom-footer-content {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 75% 25%;
     border-top: 2px solid white;
     padding: 20px 0 20px 0;
 }
 
 .copyright {
-    text-align: center;
+    padding-left: 18%;
 }
 
 .footer-logo a{
@@ -527,7 +539,6 @@ footer {
     text-decoration: none;
     color: white;
     font-size: 20px;
-    padding-left: 300px;
 }
 
 
@@ -581,7 +592,6 @@ footer {
 }
 
 .list-bg-img {
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../img/img-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 127px;
@@ -906,8 +916,29 @@ table, td {
 
     .footer-details-content {
         display: block;
+        padding-top: 30px;
         padding-bottom: 30px;
-        padding-left: 150px;
+        padding-left: 30%;
+    }
+
+    .bottom-footer-content {
+        display: block;
+        border-top: 2px solid white;
+        padding: 20px 0 20px 0;
+    }
+
+    .copyright {
+        margin-left: -10%;
+        padding-bottom: 5%;
+    }
+    
+    .footer-logo a{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin-left: 35%;
+        padding-bottom: 4%;
     }
 
     footer {
@@ -917,7 +948,7 @@ table, td {
     /* property page footer margin set */
     
     .property-page-footer {
-        margin-top: 2800px;
+        margin-top: 2600px;
     }
 
     .footer-details-content {
@@ -932,4 +963,47 @@ table, td {
     .link {
         display: block;
     }
+
+    .link .right {
+        margin-top: -32%;
+        margin-left: -17%;
+    }
+
+    /* Property list styling */
+
+
+.property-content-list {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.load-more-button2 {
+    display: none;
+}
+
+.property-list-footer {
+    margin-top: 1750px;
+}
+
+/* .list-bg-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 127px;
+}
+
+.list-items {
+    
+    padding-left: 40px;
+    border: 1px solid gray;
+    padding-top: 10px;
+}
+
+.address {
+    margin-top: -20px;
+}
+
+.list-item-author {
+    margin-top: -3px;
+} */
+
 }
